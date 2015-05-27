@@ -1,0 +1,39 @@
+﻿Name: Cabbage.OAuth
+AntiForgery: disabled
+Author: 深圳聚乾科技开发有限公司
+Website: http://www.juqian168.com/
+Version: 1.1
+OrchardVersion: 1.6
+Dependencies: Cabbage.QuickLogOn
+Category: Security
+Description: 启用此模块将未标识OrchardFeature的功能都启用.
+FeatureName: QQ登录
+Features:
+	Cabbage.OAuth.WeiXin:
+		Name: 微信登录
+		Category: Security
+		Dependencies: Cabbage.QuickLogOn
+	Cabbage.OAuth.Sina:
+		Name: 新浪微博登录
+		Category: Security
+		Dependencies: Cabbage.QuickLogOn
+	Cabbage.OAuth.Renren:
+		Name: 人人网登录
+		Category: Security
+		Dependencies: Cabbage.QuickLogOn
+	Cabbage.OAuth.Kaixin:
+		Name: 开心网登录
+		Category: Security
+		Dependencies: Cabbage.QuickLogOn
+	Cabbage.OAuth.Douban:
+		Name: 豆瓣登录
+		Category: Security
+		Dependencies: Cabbage.QuickLogOn
+	Cabbage.OAuth.Baidu:
+		Name: 百度登录
+		Category: Security
+		Dependencies: Cabbage.QuickLogOn
+	Cabbage.OAuth.Taobao:
+		Name: 淘宝登录
+		Category: Security
+		Dependencies: Cabbage.QuickLogOn

@@ -1,0 +1,20 @@
+﻿1.在一个Module中如果需要包含多个Feature, 那么每个Feature相关的Controller,Driver,Handler,Model,Service(即实现了IDependency基接口的类)
+都需要标记[OrchardFeature("模块名.Feature名")]
+
+
+
+2.在有多个Feature时,可以用当前模块的名称作为一个Feature,如本例中的QQ登录为 [OrchardFeature("Cabbage.OAuth")]
+  而不是[OrchardFeature("Cabbage.OAuth.QQ")], 这样做的好处是在后台模块列表中,不会同时有QQ的Feature,和模块本身的Feature(没什么用).
+  但是要特别注意: 所有未标记OrchardFeature的实现了IDependency基接口的类,将在启用模块名相同的Feature才生效.
+  如本例中的TestCommands,只有在启用QQ登录时才能被识别,否则识别不了.
+
+
+
+3.凡是操作数据库的DO类命名空间必须是<模块名.Models>,因此须放在Models文件夹,Orchard.Environment.ShellBuilders.CompositionStrategy.IsRecord进行验证
+
+
+4.Cabbage.OAuth将IQuickLogOnService接口中的LogOn方法,创建用户和查找用户的操作设计成了Providers中的回调.
+将每个Providers有机会去自定义这两个操作.
+
+
+5.

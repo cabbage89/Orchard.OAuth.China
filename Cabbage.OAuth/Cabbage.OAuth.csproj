@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4055ACBB-280E-4BF7-9706-E5598521A684}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Cabbage.OAuth</RootNamespace>
+    <AssemblyName>Cabbage.OAuth</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Orchard.Core">
+      <HintPath>..\..\bin\Orchard.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Orchard.Framework">
+      <HintPath>..\..\bin\Orchard.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\bin\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Commands\TestCommands.cs" />
+    <Compile Include="Controllers\WeiXinOAuthController.cs" />
+    <Compile Include="Controllers\QQOAuthController.cs" />
+    <Compile Include="Controllers\SinaOAuthController.cs" />
+    <Compile Include="Controllers\RenrenOAuthController.cs" />
+    <Compile Include="Controllers\KaixinOAuthController.cs" />
+    <Compile Include="Controllers\DoubanOAuthController.cs" />
+    <Compile Include="Controllers\BaiduOAuthController.cs" />
+    <Compile Include="Controllers\TaobaoOAuthController.cs" />
+    <Compile Include="Drivers\WeiXinSettingsPartDriver.cs" />
+    <Compile Include="Drivers\QQSettingsPartDriver.cs" />
+    <Compile Include="Drivers\SinaSettingsPartDriver.cs" />
+    <Compile Include="Drivers\RenrenSettingsPartDriver.cs" />
+    <Compile Include="Drivers\KaixinSettingsPartDriver.cs" />
+    <Compile Include="Drivers\DoubanSettingsPartDriver.cs" />
+    <Compile Include="Drivers\BaiduSettingsPartDriver.cs" />
+    <Compile Include="Drivers\TaobaoSettingsPartDriver.cs" />
+    <None Include="Drivers\WinXinUserInfoPartDriver._cs" />
+    <Compile Include="Handlers\QQUserInfoPartHandle.cs" />
+    <Compile Include="Handlers\WeiXinSettingsPartHandler.cs" />
+    <Compile Include="Handlers\QQSettingsPartHandler.cs" />
+    <Compile Include="Handlers\SinaSettingsPartHandler.cs" />
+    <Compile Include="Handlers\RenrenSettingsPartHandler.cs" />
+    <Compile Include="Handlers\KaixinSettingsPartHandler.cs" />
+    <Compile Include="Handlers\DoubanSettingsPartHandler.cs" />
+    <Compile Include="Handlers\BaiduSettingsPartHandler.cs" />
+    <Compile Include="Handlers\TaobaoSettingsPartHandler.cs" />
+    <Compile Include="Handlers\WinXinUserInfoPartHandle.cs" />
+    <Compile Include="Migrations.cs" />
+    <Compile Include="Models\QQ\QQUserInfoModel.cs" />
+    <Compile Include="Models\QQ\QQUserInfoPart.cs" />
+    <Compile Include="Models\QQ\QQUserInfoPartRecord.cs" />
+    <Compile Include="Models\WeiXin\WeiXinSettingsPart.cs" />
+    <Compile Include="Models\WeiXin\WeiXinSettingsPartRecord.cs" />
+    <Compile Include="Models\Renren\RequestTokenModel.cs" />
+    <Compile Include="Models\QQ\QQSettingsPart.cs" />
+    <Compile Include="Models\QQ\QQSettingsPartRecord.cs" />
+    <Compile Include="Models\Sina\SinaSettingsPart.cs" />
+    <Compile Include="Models\Sina\SinaSettingsPartRecord.cs" />
+    <Compile Include="Models\Renren\RenrenSettingsPart.cs" />
+    <Compile Include="Models\Renren\RenrenSettingsPartRecord.cs" />
+    <Compile Include="Models\Kaixin\KaixinSettingsPart.cs" />
+    <Compile Include="Models\Kaixin\KaixinSettingsPartRecord.cs" />
+    <Compile Include="Models\Douban\DoubanSettingsPart.cs" />
+    <Compile Include="Models\Douban\DoubanSettingsPartRecord.cs" />
+    <Compile Include="Models\Baidu\BaiduSettingsPart.cs" />
+    <Compile Include="Models\Baidu\BaiduSettingsPartRecord.cs" />
+    <Compile Include="Models\Taobao\TaobaoSettingsPart.cs" />
+    <Compile Include="Models\Taobao\TaobaoSettingsPartRecord.cs" />
+    <Compile Include="Models\WeiXin\WeiXinUserInfoModel.cs" />
+    <Compile Include="Models\WeiXin\WinXinUserInfoPart.cs" />
+    <Compile Include="Models\WeiXin\WinXinUserInfoPartRecord.cs" />
+    <Compile Include="Providers\WeiXinOAuthProvider.cs" />
+    <Compile Include="Providers\QQOAuthProvider.cs" />
+    <Compile Include="Providers\SinaOAuthProvider.cs" />
+    <Compile Include="Providers\RenrenOAuthProvider.cs" />
+    <Compile Include="Providers\KaixinOAuthProvider.cs" />
+    <Compile Include="Providers\DoubanOAuthProvider.cs" />
+    <Compile Include="Providers\BaiduOAuthProvider.cs" />
+    <Compile Include="Providers\TaobaoOAuthProvider.cs" />
+    <Compile Include="Services\OAuthHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceManifest.cs" />
+    <Compile Include="Routes.cs" />
+    <Compile Include="Services\WeiXinOAuthService.cs" />
+    <Compile Include="Services\QQOAuthService.cs" />
+    <Compile Include="Services\SinaOAuthService.cs" />
+    <Compile Include="Services\RenrenOAuthService.cs" />
+    <Compile Include="Services\KaixinOAuthService.cs" />
+    <Compile Include="Services\DoubanOAuthService.cs" />
+    <Compile Include="Services\BaiduOAuthService.cs" />
+    <Compile Include="Services\TaobaoOAuthService.cs" />
+    <Compile Include="ViewModels\WeiXinOAuthAuthViewModel.cs" />
+    <Compile Include="ViewModels\WeiXinAccessTokenJsonModel.cs" />
+    <Compile Include="ViewModels\QQOAuthAuthViewModel.cs" />
+    <Compile Include="ViewModels\SinaAccessTokenJsonModel.cs" />
+    <Compile Include="ViewModels\SinaOAuthAuthViewModel.cs" />
+    <Compile Include="ViewModels\RenrenOAuthAuthViewModel.cs" />
+    <Compile Include="ViewModels\RenrenAccessTokenJsonModel.cs" />
+    <Compile Include="ViewModels\RenrenUserInfoJsonModel.cs" />
+    <Compile Include="ViewModels\KaixinOAuthAuthViewModel.cs" />
+    <Compile Include="ViewModels\KaixinAccessTokenJsonModel.cs" />
+    <Compile Include="ViewModels\KaixinUserInfoJsonModel.cs" />
+    <Compile Include="ViewModels\DoubanAccessTokenJsonModel.cs" />
+    <Compile Include="ViewModels\DoubanOAuthAuthViewModel.cs" />
+    <Compile Include="ViewModels\BaiduAccessTokenJsonModel.cs" />
+    <Compile Include="ViewModels\BaiduOAuthAuthViewModel.cs" />
+    <Compile Include="ViewModels\BaiduUserInfoJsonModel.cs" />
+    <Compile Include="ViewModels\TaobaoAccessTokenJsonModel.cs" />
+    <Compile Include="ViewModels\TaobaoOAuthAuthViewModel.cs" />
+    <Compile Include="ViewModels\TaobaoUserInfoJsonModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Placement.info" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Web.config" />
+    <Content Include="说明.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Module.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Tools\Orchard\Orchard.csproj">
+      <Project>{33b1bc8d-e292-4972-a363-22056b207156}</Project>
+      <Name>Orchard</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Cabbage.QuickLogOn\Cabbage.QuickLogOn.csproj">
+      <Project>{809c09ed-f637-4c25-8ad6-65e4775e8dfe}</Project>
+      <Name>Cabbage.QuickLogOn</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Orchard.Users\Orchard.Users.csproj">
+      <Project>{79aed36e-abd0-4747-93d3-8722b042454b}</Project>
+      <Name>Orchard.Users</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts.QQ.SiteSettings.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts.Sina.SiteSettings.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts.Renren.SiteSettings.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts.Kaixin.SiteSettings.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts.Douban.SiteSettings.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts.Baidu.SiteSettings.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts.Taobao.SiteSettings.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts.WeiXin.SiteSettings.cshtml" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

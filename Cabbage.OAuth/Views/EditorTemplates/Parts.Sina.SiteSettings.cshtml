@@ -1,0 +1,24 @@
+﻿@model Cabbage.OAuth.Models.SinaSettingsPart
+@using Orchard.Utility.Extensions;
+
+<fieldset>
+    <legend>@T("新浪微博登录")</legend>
+    <div>
+        <label for="@Html.FieldIdFor(m => m.ClientId)">@T("appid(oauth_consumer_key/client_id)")</label>
+        @Html.TextBoxFor(m => m.ClientId)
+        @Html.ValidationMessage("ClientId", "*")
+        <span class="hint">@T("你必须创建新浪微博应用以获取appid.")&nbsp;<a href="http://open.weibo.com/connect " target="_blank">创建新浪应用</a></span>
+    </div>
+    <div>
+        <label for="@Html.FieldIdFor(m => m.ClientSecret)">@T("appkey(auth_consumer_secret/client_secret)")</label>
+        @Html.PasswordFor(m => m.ClientSecret)
+        @Html.ValidationMessage("ClientSecret", "*")
+        <span class="hint"></span>
+    </div>
+    <div>
+        <label for="@Html.FieldIdFor(m => m.Additional)">@T("附加参数")</label>
+        @Html.TextBoxFor(m => m.Additional)
+        @Html.ValidationMessage("Additional", "*")
+        <span class="hint">Url参数必须以&amp;分隔(eg:scope=xx&display=xx)</span>
+    </div>
+</fieldset>

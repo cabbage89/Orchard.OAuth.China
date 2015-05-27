@@ -1,0 +1,24 @@
+﻿@model dynamic
+@using Orchard.ContentManagement;
+
+@{
+    var content = (IContent)Model.CurrentUser;
+    var svc = WorkContext.Resolve<Cabbage.QuickLogOn.Services.IQuickLogOnService>();
+    Cabbage.QuickLogOn.Models.QuickLogOnUserInfo info = svc.GetUserInfo(Model.CurrentUser);
+}
+@if (Model.CurrentUser != null)
+{
+    <div id="login" style="height:30px;line-height:30px;">
+        @if (info != null)
+        {
+            <img width="30" height="30" style="border-radius:50%;vertical-align:middle;" src="@(info.HeadimgUrl)" />
+        }
+        else
+        {
+            @T("User:")
+        } @Html.ItemDisplayText(content) |
+        @*@Html.ActionLink(T("修改密码").ToString(), "ChangePassword", new { Controller = "Account", Area = "Orchard.Users" })
+            |*@
+        @Html.ActionLink(T("Logout").ToString(), "LogOff", new { Area = "Orchard.Users", Controller = "Account", ReturnUrl = Href("~/") })
+    </div>
+}

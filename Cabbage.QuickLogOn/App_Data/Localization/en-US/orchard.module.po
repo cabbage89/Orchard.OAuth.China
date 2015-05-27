@@ -1,0 +1,48 @@
+#: ~/Modules/RM.QuickLogOn/Module.txt
+#| msgid "Name"
+msgctxt ~/Modules/RM.QuickLogOn/Module.txt
+msgid "RM.QuickLogOn"
+msgstr "RM.QuickLogOn"
+
+#: ~/Modules/RM.QuickLogOn/Module.txt
+#| msgid "Author"
+msgctxt ~/Modules/RM.QuickLogOn/Module.txt
+msgid "Maxim Rich"
+msgstr "Maxim Rich"
+
+#: ~/Modules/RM.QuickLogOn/Module.txt
+#| msgid "Website"
+msgctxt ~/Modules/RM.QuickLogOn/Module.txt
+msgid "http://www.richmaxim.com"
+msgstr "http://www.richmaxim.com"
+
+#: ~/Modules/RM.QuickLogOn/Module.txt
+#| msgid "RM.QuickLogOn.Name"
+msgctxt ~/Modules/RM.QuickLogOn/Module.txt
+msgid "Quick LogOn"
+msgstr "Quick LogOn"
+
+#: ~/Modules/RM.QuickLogOn/Module.txt
+#| msgid "RM.QuickLogOn.Description"
+msgctxt ~/Modules/RM.QuickLogOn/Module.txt
+msgid "Gives users log on site without registration but with different providers, like OAuth and etc."
+msgstr "Gives users log on site without registration but with different providers, like OAuth and etc."
+
+#: ~/Modules/RM.QuickLogOn/Module.txt
+#| msgid "RM.QuickLogOn.Category"
+msgctxt ~/Modules/RM.QuickLogOn/Module.txt
+msgid "Security"
+msgstr "Security"
+
+#: RM.QuickLogOn.Services.QuickLogOnService
+#| msgid "User can not be created to assign to Quick LogOn credentials"
+msgctxt RM.QuickLogOn.Services.QuickLogOnService
+msgid "User can not be created to assign to Quick LogOn credentials"
+msgstr "User can not be created to assign to Quick LogOn credentials"
+
+#: RM.QuickLogOn.Services.QuickLogOnService
+#| msgid "User was disabled by site administrator"
+msgctxt RM.QuickLogOn.Services.QuickLogOnService
+msgid "User was disabled by site administrator"
+msgstr "User was disabled by site administrator"
+

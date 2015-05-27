@@ -1,0 +1,24 @@
+﻿@model Cabbage.OAuth.Models.BaiduSettingsPart
+@using Orchard.Utility.Extensions;
+
+<fieldset>
+    <legend>@T("百度登录")</legend>
+    <div>
+        <label for="@Html.FieldIdFor(m => m.ClientId)">@T("appid(oauth_consumer_key/client_id)")</label>
+        @Html.TextBoxFor(m => m.ClientId)
+        @Html.ValidationMessage("ClientId", "*")
+        <span class="hint">@T("你必须创建百度应用以获取appid.")&nbsp;<a href="http://developer.baidu.com/dev#/create" target="_blank">创建百度应用</a></span>
+    </div>
+    <div>
+        <label for="@Html.FieldIdFor(m => m.ClientSecret)">@T("appkey(auth_consumer_secret/client_secret)")</label>
+        @Html.PasswordFor(m => m.ClientSecret)
+        @Html.ValidationMessage("ClientSecret", "*")
+        <span class="hint"></span>
+    </div>
+    <div>
+        <label for="@Html.FieldIdFor(m => m.Additional)">@T("附加参数")</label>
+        @Html.TextBoxFor(m => m.Additional)
+        @Html.ValidationMessage("Additional", "*")
+        <span class="hint">Url参数必须以&amp;分隔(eg:scope=xx&display=xx)</span>
+    </div>
+</fieldset>

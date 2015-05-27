@@ -1,0 +1,10 @@
+<Placement>
+  <Place Parts_Sina_SiteSettings="Content:1"/>
+  <Place Parts_QQ_SiteSettings="Content:2"/>
+  <Place Parts_WeiXin_SiteSettings="Content:3"/>
+  <Place Parts_Kaixin_SiteSettings="Content:4"/>
+  <Place Parts_Douban_SiteSettings="Content:5"/>
+  <Place Parts_Baidu_SiteSettings="Content:6"/>
+  <Place Parts_Taobao_SiteSettings="Content:7"/>
+  <Place Parts_Renren_SiteSettings="Content:8"/>
+</Placement>

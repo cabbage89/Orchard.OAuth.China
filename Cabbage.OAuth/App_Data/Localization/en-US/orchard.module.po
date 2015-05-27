@@ -1,0 +1,84 @@
+#: ~/Modules/RM.QuickLogOn.OAuth/Module.txt
+#| msgid "Name"
+msgctxt ~/Modules/RM.QuickLogOn.OAuth/Module.txt
+msgid "Set of Quick LogOn OAuth providers"
+msgstr "Set of Quick LogOn OAuth providers"
+
+#: ~/Modules/RM.QuickLogOn.OAuth/Module.txt
+#| msgid "Author"
+msgctxt ~/Modules/RM.QuickLogOn.OAuth/Module.txt
+msgid "Maxim Rich"
+msgstr "Maxim Rich"
+
+#: ~/Modules/RM.QuickLogOn.OAuth/Module.txt
+#| msgid "Website"
+msgctxt ~/Modules/RM.QuickLogOn.OAuth/Module.txt
+msgid "http://www.richmaxim.com"
+msgstr "http://www.richmaxim.com"
+
+#: ~/Modules/RM.QuickLogOn.OAuth/Module.txt
+#| msgid "RM.QuickLogOn.OAuth.Twitter.Name"
+msgctxt ~/Modules/RM.QuickLogOn.OAuth/Module.txt
+msgid "Quick LogOn with Twitter OAuth [ Not implemented. Contact author, if you want it. ]"
+msgstr "Quick LogOn with Twitter OAuth [ Not implemented. Contact author, if you want it. ]"
+
+#: ~/Modules/RM.QuickLogOn.OAuth/Module.txt
+#| msgid "RM.QuickLogOn.OAuth.Twitter.Category"
+msgctxt ~/Modules/RM.QuickLogOn.OAuth/Module.txt
+msgid "Security"
+msgstr "Security"
+
+#: ~/Modules/RM.QuickLogOn.OAuth/Module.txt
+#| msgid "RM.QuickLogOn.OAuth.Facebook.Name"
+msgctxt ~/Modules/RM.QuickLogOn.OAuth/Module.txt
+msgid "Quick LogOn with Facebook OAuth [ Not implemented. Contact author, if you want it. ]"
+msgstr "Quick LogOn with Facebook OAuth [ Not implemented. Contact author, if you want it. ]"
+
+#: ~/Modules/RM.QuickLogOn.OAuth/Module.txt
+#| msgid "RM.QuickLogOn.OAuth.Facebook.Category"
+msgctxt ~/Modules/RM.QuickLogOn.OAuth/Module.txt
+msgid "Security"
+msgstr "Security"
+
+#: RM.QuickLogOn.OAuth.Handlers.GoogleSettingsPartHandler
+#| msgid "QuickLogOn"
+msgctxt RM.QuickLogOn.OAuth.Handlers.GoogleSettingsPartHandler
+msgid "QuickLogOn"
+msgstr "QuickLogOn"
+
+#: RM.QuickLogOn.OAuth.Services.GoogleOAuthService
+#| msgid "LogOn through Google failed: {0}"
+msgctxt RM.QuickLogOn.OAuth.Services.GoogleOAuthService
+msgid "LogOn through Google failed: {0}"
+msgstr "LogOn through Google failed: {0}"
+
+#: ~/Modules/RM.QuickLogOn.OAuth/Views/EditorTemplates/Parts.Google.SiteSettings.cshtml
+#| msgid "Google OAuth"
+msgctxt ~/Modules/RM.QuickLogOn.OAuth/Views/EditorTemplates/Parts.Google.SiteSettings.cshtml
+msgid "Google OAuth"
+msgstr "Google OAuth"
+
+#: ~/Modules/RM.QuickLogOn.OAuth/Views/EditorTemplates/Parts.Google.SiteSettings.cshtml
+#| msgid "Client Id"
+msgctxt ~/Modules/RM.QuickLogOn.OAuth/Views/EditorTemplates/Parts.Google.SiteSettings.cshtml
+msgid "Client Id"
+msgstr "Client Id"
+
+#: ~/Modules/RM.QuickLogOn.OAuth/Views/EditorTemplates/Parts.Google.SiteSettings.cshtml
+#| msgid "You have to create Google API Project to get ClientId."
+msgctxt ~/Modules/RM.QuickLogOn.OAuth/Views/EditorTemplates/Parts.Google.SiteSettings.cshtml
+msgid "You have to create Google API Project to get ClientId."
+msgstr "You have to create Google API Project to get ClientId."
+
+#: ~/Modules/RM.QuickLogOn.OAuth/Views/EditorTemplates/Parts.Google.SiteSettings.cshtml
+#| msgid "Client Secret"
+msgctxt ~/Modules/RM.QuickLogOn.OAuth/Views/EditorTemplates/Parts.Google.SiteSettings.cshtml
+msgid "Client Secret"
+msgstr "Client Secret"
+
+#: ~/Modules/RM.QuickLogOn.OAuth/Views/EditorTemplates/Parts.Google.SiteSettings.cshtml
+#| msgid "Entre client secret to change. If empty then no change."
+msgctxt ~/Modules/RM.QuickLogOn.OAuth/Views/EditorTemplates/Parts.Google.SiteSettings.cshtml
+msgid "Entre client secret to change. If empty then no change."
+msgstr "Entre client secret to change. If empty then no change."
+

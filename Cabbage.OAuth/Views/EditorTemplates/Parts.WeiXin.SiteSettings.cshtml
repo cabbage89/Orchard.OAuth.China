@@ -1,0 +1,24 @@
+﻿@model Cabbage.OAuth.Models.WeiXinSettingsPart
+@using Orchard.Utility.Extensions;
+
+<fieldset>
+    <legend>@T("微信登录")</legend>
+    <div>
+        <label for="@Html.FieldIdFor(m => m.ClientId)">@T("appid")</label>
+        @Html.TextBoxFor(m => m.ClientId)
+        @Html.ValidationMessage("ClientId", "*")
+        <span class="hint">@T("你须拥有微信订阅号或者服务号来获得appid.")&nbsp;<a href="https://mp.weixin.qq.com/" target="_blank">登录微信公众平台</a></span>
+    </div>
+    <div>
+        <label for="@Html.FieldIdFor(m => m.ClientSecret)">@T("secret")</label>
+        @Html.PasswordFor(m => m.ClientSecret)
+        @Html.ValidationMessage("ClientSecret", "*")
+        <span class="hint"></span>
+    </div>
+    <div>
+        <label for="@Html.FieldIdFor(m => m.Additional)">@T("附加参数")</label>
+        @Html.TextBoxFor(m => m.Additional)
+        @Html.ValidationMessage("Additional", "*")
+        <span class="hint">Url参数必须以&amp;分隔(eg:scope=xx&display=xx)</span>
+    </div>
+</fieldset>

@@ -1,0 +1,22 @@
+﻿@using Orchard.Utility.Extensions;
+@using Orchard.Mvc.Html;
+@using Orchard.Mvc.Extensions;
+@using System.Linq;
+@using Cabbage.QuickLogOn.Providers
+
+@{
+    var providers = Model.Providers as IEnumerable<IQuickLogOnProvider>;
+}
+
+@if (providers.Any())
+{
+    <ul>
+        @foreach (var p in providers)
+        {
+        <li>@Html.Link(p.Name, p.GetLogOnUrl(WorkContext), new { title = p.Description })</li> }
+    </ul>
+}
+else
+{
+    <div>@T("没有任何第三方登录提供器启用,请到控制面板/模块内至少启用一个.")</div>
+}

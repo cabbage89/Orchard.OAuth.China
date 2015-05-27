@@ -1,0 +1,9 @@
+﻿Name: Cabbage.QuickLogOn
+AntiForgery: disabled
+Author: 深圳市聚乾科技开发有限公司
+Website: http://www.juqian168.com/
+Version: 1.0.2
+OrchardVersion: 1.6
+Description: 让用户不用注册即可以使用第三方提供器登录.
+Category: Security
+Dependencies: Orchard.Users

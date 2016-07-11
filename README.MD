@@ -1,5 +1,7 @@
 Orchard OAuth模块
 
+[Orchard建站视频](http://www.chuanke.com/3027295-124882.html)    
+
 在Orchard 1.8.1上测试通过
 
 支持:
